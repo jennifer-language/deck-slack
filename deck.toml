@@ -1,0 +1,18 @@
+[package]
+name = "@jennifer/slack"
+version = "0.1.0"
+description = "Post messages to Slack through an Incoming Webhook"
+license = "LGPL-3.0-only"
+authors = ["mplx <mplx@jennifer-lang.dev>"]
+# net - every post is an HTTP POST through the `http` module. The stock
+#       `jennifer-tiny` has no network driver, so posts need the default binary.
+capabilities = ["net"]
+keywords = ["slack", "notifications", "webhook", "block-kit"]
+
+[package.urls]
+deck = "https://raw.githubusercontent.com/jennifer-language/deck-slack/main/deck.toml"
+homepage = "https://github.com/jennifer-language/deck-slack"
+manual = "https://jennifer-language.github.io/deck-slack/"
+
+[engines]
+jennifer = ">=0.25.0"

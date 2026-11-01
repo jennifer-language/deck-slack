@@ -1,0 +1,36 @@
+# Grimoire book configuration for the @jennifer/slack documentation.
+
+[book]
+title = "@jennifer/slack"
+description = "Post messages to Slack through an Incoming Webhook"
+language = "en"
+src = "docs"
+
+[build]
+out = "site"
+clean = true
+jobs = 0
+
+[html]
+# Any of the ten built-in themes; run "grimoire themes" for the list.
+theme = "ivy"
+# The colour mode a first-time reader gets: auto, light, or dark.
+mode = "auto"
+navPosition = "left"
+tocPosition = "right"
+tocDepth = 3
+sectionNumbers = true
+titleUrl = "https://jennifer-language.github.io/deck-slack/"
+repoUrl = "https://github.com/jennifer-language/deck-slack"
+repoLabel = "Source"
+editUrl = "https://github.com/jennifer-language/deck-slack/edit/main/docs/{path}"
+
+[highlight]
+enabled = true
+
+[search]
+enabled = true
+
+[pdf]
+# The book is published as a site only.
+enabled = false
