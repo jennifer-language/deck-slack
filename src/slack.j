@@ -68,8 +68,9 @@ func isLoopback(rest as string) {
 }
 
 # checkWebhook throws unless the URL is https://, or http:// to a loopback host.
-# `http` sends anything else, a missing or mistyped scheme included, in the
-# clear, and the URL is the secret. The message leaves the URL out.
+# `http` sends a plain http:// URL to any host in the clear (before Jennifer
+# 0.26.0, a missing or mistyped scheme too), and the URL is the secret. The
+# message leaves the URL out.
 func checkWebhook(webhookUrl as string) {
     def lower as string init strings.lower($webhookUrl);
     if (strings.startsWith($lower, "https://")) {
