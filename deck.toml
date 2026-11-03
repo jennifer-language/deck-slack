@@ -1,11 +1,9 @@
 [package]
 name = "@jennifer/slack"
-version = "0.1.0"
+version = "0.2.0-dev"
 description = "Post messages to Slack through an Incoming Webhook"
 license = "LGPL-3.0-only"
 authors = ["mplx <mplx@jennifer-lang.dev>"]
-# net - every post is an HTTP POST through the `http` module. The stock
-#       `jennifer-tiny` has no network driver, so posts need the default binary.
 capabilities = ["net"]
 keywords = ["slack", "notifications", "webhook", "block-kit"]
 
